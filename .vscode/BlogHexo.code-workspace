@@ -1,0 +1,42 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\source\\_posts"
+		},
+	],
+	"settings": {
+		"files.exclude": {
+			// ".gitignore": true,
+			"desktop.ini":true,
+			".deploy_git/":true,
+			".github/":true,
+			// "public/":true,
+			"scaffolds/":true,
+			"_config.landscape.yml":true,
+			// "_config.yml":true,
+			"db.json":true,
+			"package-lock.json":true,
+			"package.json":true,
+		},
+		"workbench.editor.revealIfOpen": true,
+		"workbench.colorCustomizations":{
+			"titleBar.activeBackground": "#8f7d2c",
+			// "tab.activeBackground": "#808080",
+			"statusBar.background": "#8f7d2c",
+		},
+		"pasteImage.path": "${currentFileNameWithoutExt}",
+		// "pasteImage.insertPattern": "${% asset_img ${imageFilePath} %}"
+	},
+	"extensions": {
+		"recommendations": [
+			// "coenraads.bracket-pair-colorizer-2",
+			"geeklearningio.graphviz-markdown-preview",
+			"mushan.vscode-paste-image",
+			"rafamel.subtle-brackets",
+			"yzhang.markdown-all-in-one",
+		],
+	}
+}
