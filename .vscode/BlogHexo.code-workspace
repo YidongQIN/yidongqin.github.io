@@ -4,19 +4,15 @@
 			"path": ".."
 		},
 		{
-			"path": "..\\source\\_posts"
+			"path": "..\\source\\_posts",
+			"name": "BLOG"
 		},
 	],
 	"settings": {
 		"files.exclude": {
-			// ".gitignore": true,
 			"desktop.ini":true,
 			".deploy_git/":true,
 			".github/":true,
-			// "public/":true,
-			"scaffolds/":true,
-			"_config.landscape.yml":true,
-			// "_config.yml":true,
 			"db.json":true,
 			"package-lock.json":true,
 			"package.json":true,
