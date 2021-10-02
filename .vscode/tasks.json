@@ -20,7 +20,7 @@
             },
         },
         {
-            "label": "Hexo",
+            "label": "Hexo G & D",
             "type": "shell",
             "command":"npx hexo clean && hexo g -d",
             "presentation": {
@@ -28,6 +28,11 @@
                 "showReuseMessage": false,
                 "clear": true,
             },
+        },
+        {
+            "label": "Hexo S",
+            "type": "shell",
+            "command":"npx hexo clean && hexo s",
         }
     ]
 }
