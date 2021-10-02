@@ -20,7 +20,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"yidongqin.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"yidongqin.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"disqus","storage":true,"lazyload":false,"nav":{"disqus":{"text":"Load Disqus","order":-1}}},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 <meta name="description" content="目的自己一直旁学杂收，但是缺少体系化的知识框架。 听说“费曼学习法”很有效？于是，就想通过写作输出，梳理自己的知识体系。 因为都是自己的闲言碎语、荒唐戏言，所以不想在社区类型的网站发布，那么最好的选择当然是自建博客。同时不希望太折腾，所以免费的、常用的现成框架是坠吼的。最终选择了用 Hexo 在 Github Pages 上搭建个人网站的方案。 参考了一些网上的教程：  一小时搭建完自己的个人网站">
 <meta property="og:type" content="article">
 <meta property="og:title" content="搭建个人博客">
@@ -29,9 +29,10 @@
 <meta property="og:description" content="目的自己一直旁学杂收，但是缺少体系化的知识框架。 听说“费曼学习法”很有效？于是，就想通过写作输出，梳理自己的知识体系。 因为都是自己的闲言碎语、荒唐戏言，所以不想在社区类型的网站发布，那么最好的选择当然是自建博客。同时不希望太折腾，所以免费的、常用的现成框架是坠吼的。最终选择了用 Hexo 在 Github Pages 上搭建个人网站的方案。 参考了一些网上的教程：  一小时搭建完自己的个人网站">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-10-01T10:49:52.000Z">
-<meta property="article:modified_time" content="2021-10-01T15:17:35.987Z">
+<meta property="article:modified_time" content="2021-10-02T02:18:16.796Z">
 <meta property="article:author" content="ADUN">
-<meta property="article:tag" content="Software; Tutorial;">
+<meta property="article:tag" content="Software">
+<meta property="article:tag" content="Tutorial">
 <meta name="twitter:card" content="summary">
 
 
@@ -137,12 +138,23 @@
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
-      <div class="site-state-item site-state-tags">
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
         <span class="site-state-item-count">1</span>
-        <span class="site-state-item-name">tags</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
 </div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/YidongQIN" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;YidongQIN" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
 
 
 
@@ -160,6 +172,7 @@
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
+  <div class="reading-progress-bar"></div>
 
 <noscript>
   <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
@@ -200,9 +213,24 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2021-10-01 18:49:52 / Modified: 23:17:35" itemprop="dateCreated datePublished" datetime="2021-10-01T18:49:52+08:00">2021-10-01</time>
+      <time title="Created: 2021-10-01 18:49:52" itemprop="dateCreated datePublished" datetime="2021-10-01T18:49:52+08:00">2021-10-01</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-10-02 10:18:16" itemprop="dateModified" datetime="2021-10-02T10:18:16+08:00">2021-10-02</time>
+      </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+        </span>
     </span>
 
   
@@ -304,7 +332,8 @@
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/Software-Tutorial/" rel="tag"># Software; Tutorial;</a>
+              <a href="/tags/Software/" rel="tag"># Software</a>
+              <a href="/tags/Tutorial/" rel="tag"># Tutorial</a>
           </div>
 
         
