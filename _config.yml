@@ -99,6 +99,13 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: next
 
+# Hexo-Excerpt
+excerpt:
+  depth: 5  #按层来算，也就是按代码块来算
+  excerpt_excludes: []
+  more_excludes: []
+  hideWholePostExcerpts: true
+
 ## Math
 math:
   enable: true
