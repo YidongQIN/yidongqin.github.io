@@ -18,7 +18,7 @@
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-calendar": "github:theme-next/theme-next-calendar",
     "hexo-generator-category": "^1.0.0",
-    "hexo-generator-index": "^2.0.0",
+    "hexo-generator-index": "^3.0.0",
     "hexo-generator-sitemap": "^2.1.0",
     "hexo-generator-tag": "^1.0.0",
     "hexo-next-fireworks": "github:next-theme/hexo-next-fireworks",
